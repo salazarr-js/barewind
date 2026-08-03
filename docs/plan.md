@@ -1,6 +1,6 @@
 # 🍃 Barewind — plan
 
-Current phase: **research, redone properly**. Implementation planning comes after — first we widen the inspiration pool and re-evaluate every source with the same lens.
+Current phase: **research, redone properly** — *paused, last reviewed 2026-08-03*. Implementation planning comes after — first we widen the inspiration pool and re-evaluate every source with the same lens.
 
 ## 1. Find more inspiration sources
 

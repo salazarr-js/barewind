@@ -38,6 +38,7 @@ A thin layer that sits right after Tailwind and gives every semantic HTML elemen
 - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms) — form-control normalization groundwork
 - [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography) — bare-content styling precedent (scoped to `prose`)
 - [Open Props](https://open-props.style/) — design tokens as plain CSS variables: the token-first, framework-agnostic spirit
+- [shadcn/ui Typeset](https://ui.shadcn.com/typeset) — token-driven bare-content typography (`--typeset-*`: font roles, size, leading, flow); the shadcn-ecosystem take on styling semantic HTML, scoped by a `.typeset` wrapper
 
 ## Scope — elements
 

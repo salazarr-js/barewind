@@ -79,6 +79,17 @@ The approach was first built and proven in a working incubator experiment — a 
 | Ripple UI | Plugin packaging reference | daisyUI-style classes |
 | [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms) | Cross-browser form-control normalization (`appearance-none`, consistent select/checkbox rendering) | Reset-only philosophy — barewind ships opinionated defaults |
 
+## Candidates pending evaluation
+
+Sources surfaced but not yet run through the rubric (per plan phase 1 → 2):
+
+- **[shadcn/ui Typeset](https://ui.shadcn.com/typeset)** — token-driven bare-content typography. Closest cousin to barewind found so far: styles semantic block elements (h1–h6, p, lists, blockquote, code) purely from CSS variables (`--typeset-font-body/heading/mono`, `--typeset-size`, `--typeset-leading`, `--typeset-flow`), no per-element classes. Points to investigate against the rubric:
+  - **Tokens** — the `--typeset-*` naming/tiering, and whether `--size`/`--leading`/`--flow` act as global multipliers (cf. Skeleton's `--text-scaling`).
+  - **Scoping** — applied via a `.typeset` / `.typeset-docs` wrapper (prose-like), *not* global-classless. Take the token API; leave the wrapper requirement — barewind styles bare tags globally.
+  - **Coverage** — block-level content/typography only; no forms, buttons, or interactive elements. Complements, doesn't overlap, barewind's form/state work.
+  - **Theming / dark mode** — how `--typeset-*` interacts with shadcn's existing token layer and `.dark` convention.
+  - **Take / leave (preliminary)** — take: the flow/leading/size multiplier vars and shadcn-native token naming; leave: wrapper scoping and prose-only scope.
+
 ## Sources
 
 - Pico — [CSS variables](https://picocss.com/docs/css-variables) · [`pico.classless.css`](https://github.com/picocss/pico/blob/main/css/pico.classless.css) · [classless showcase](https://github.com/picocss/examples/blob/master/v2-html-classless/index.html)
